@@ -1,0 +1,3 @@
+
+usuario: admin@seduc.com
+senha: admin

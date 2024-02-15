@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+       <title>Pacientes</title>
+</head>
+
+
+<body>
+ 
+
+    <div class="pacientes">
+        <div class="pacientes-header">
+            <i class="fa fa-people-carry"></i>
+                Pacientes pesquisados <span class="badge badge-pill badge-info align-top" id="countPacientes"></span>
+            <button type="button" class="invitation-card-buttons btn btn-sm btn-outline-primary btn-lg check-all-list-items float-right">
+                <i class="fa fa-check mr-1"></i> selecionar todos
+            </button>
+        </div>
+
+        <div class="card-body">
+
+            <div class="table-responsive">
+
+                <table class="pacientes-table-plugin table table-hover table table-striped table-bordered">
+                    <thead>
+                    <tr class="text-center">
+                        <th class="align-middle">#</th>
+                        <th class="align-middle"><abbr title="Código">CÓD.</abbr></th>
+                        <th class="align-middle">NOME</th>
+                        <th class="align-middle">CPF</th>
+                        <th class="align-middle">TELEFONE</th>
+                        <th class="align-middle">ENDEREÇO</th>
+                        <th class="align-middle">CEP</th>
+                        <th class="align-middle">MÉDICO</th>
+                    </tr>
+                    </thead>
+                    <tbody id="table-itens">
+                        <tr class="loader">
+                            <td colspan="100" style="display: none"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="100">
+                                <div class="alert text-center text-muted">...</div>
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </body>
+        <script src="js/paciente.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        </html>
